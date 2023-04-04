@@ -1,0 +1,12 @@
+.card-wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .card {
+        width: 20vw;
+        height: 60vh;
+        margin: auto;
+    }
+}
