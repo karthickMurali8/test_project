@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-side-bar',
@@ -9,7 +9,8 @@ import { Router } from '@angular/router';
 export class SideBarComponent {
 
   constructor(
-    private router: Router
+    private router: Router,
+    private route: ActivatedRoute
   ) {
 
   }
@@ -17,7 +18,7 @@ export class SideBarComponent {
   navigate(path: string) {
     switch(path) {
       case 'home':
-        this.router.navigate(['/'])
+        this.router.navigate(['/app/home']);
     }
   }
 

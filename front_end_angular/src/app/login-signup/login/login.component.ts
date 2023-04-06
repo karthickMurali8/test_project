@@ -27,7 +27,7 @@ export class LoginComponent {
     // relative routing :
     // this.router.navigate(['app'], {relativeTo: this.route});
 
-    this.router.navigate(['app']);
+    this.router.navigate(['app/home']);
     this.authService.loggedIn = true;
   }
 

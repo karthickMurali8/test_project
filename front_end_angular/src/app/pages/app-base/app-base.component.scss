@@ -4,7 +4,8 @@
     top: 0;
     bottom: 0;
     width: 300px;
-    border-right: 1px solid blue;
+    background: black;
+    color: white;
 }
 
 .content-right {
@@ -14,5 +15,6 @@
     .top-bar {
         display: block;
         height: 100px;
+        background: grey;
     }
 }
