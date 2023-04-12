@@ -1,0 +1,21 @@
+<table>
+    <thead>
+        <tr>
+            <th>No.</th>
+            <th>Product Name</th>
+            <th>Product Id</th>
+            <th>View Product</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let c of Products">
+            <td>{{c.no}}</td>
+            <td>{{c.name}}</td>
+            <td>{{c.id}}</td>
+            <!-- <td><button [routerLink]="['details', c.id]">View</button></td> -->
+            <td><button (click)="navigate(c.id)">View</button></td>
+        </tr>
+    </tbody>
+</table>
+
+<router-outlet></router-outlet>

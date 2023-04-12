@@ -1,4 +1,6 @@
 <ul class="m-4">
     <li class="mb-3" (click)="navigate('home')">Home</li>
-    <li class="mb-3" [routerLink]="['/app/test-screen']">test screen</li>
+    <li class="mb-3" [routerLink]="['/app/test-screen']" routerLinkActive="active-link">test screen</li>
+    <li class="mb-3" [routerLink]="['/app/products-list']" routerLinkActive="active-link">Products List</li>
+    <li class="mb-3" (click)="navigate('personal-info')">Personal Info</li>
 </ul>

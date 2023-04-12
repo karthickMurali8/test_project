@@ -7,6 +7,11 @@ import { AppBaseComponent } from './app-base/app-base.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { TestScreenComponent } from './test-screen/test-screen.component';
+import { UrlParamsComponent } from './url-params/url-params.component';
+import { ConceptsListComponent } from './concepts-list/concepts-list.component';
+import { PersonalInfoComponent } from './personal-info/personal-info.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { preventExit } from './personal-info/canDeactivate-personal-info/canDeactivate-personal-info.service';
 
 
 @NgModule({
@@ -15,11 +20,16 @@ import { TestScreenComponent } from './test-screen/test-screen.component';
     AppBaseComponent,
     SideBarComponent,
     TopBarComponent,
-    TestScreenComponent
+    TestScreenComponent,
+    UrlParamsComponent,
+    ConceptsListComponent,
+    PersonalInfoComponent
   ],
   imports: [
     CommonModule,
-    PagesRoutingModule
-  ]
+    PagesRoutingModule,
+    ReactiveFormsModule
+  ],
+  providers: [preventExit]
 })
 export class PagesModule { }

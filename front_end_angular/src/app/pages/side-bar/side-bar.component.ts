@@ -19,6 +19,9 @@ export class SideBarComponent {
     switch(path) {
       case 'home':
         this.router.navigate(['/app/home']);
+        break;
+      case 'personal-info':
+        this.router.navigate(['/app/personal-info']);
     }
   }
 
